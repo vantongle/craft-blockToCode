@@ -1,0 +1,48 @@
+{
+    "name": "van-tong/craft-block-to-code",
+    "description": "Craft CMS Plugin to generate templates codes from matrix block",
+    "type": "craft-plugin",
+    "license": "proprietary",
+    "support": {
+        "email": "vantongle@gmail.com",
+        "issues": "https://github.com/vantongle/craft-blocktocode/issues?state=open",
+        "source": "https://github.com/vantongle/craft-blocktocode",
+        "docs": "https://github.com/vantongle/craft-blocktocode",
+        "rss": "https://github.com/vantongle/craft-blocktocode/releases.atom"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.5.0"
+    },
+    "require-dev": {
+        "craftcms/ecs": "dev-main",
+        "craftcms/phpstan": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "vantong\\craftblocktocode\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "block-to-code",
+        "name": "Block To Code",
+        "developer": "Van Tong",
+        "documentationUrl": "https://github.com/vantongle/craft-blocktocode"
+    },
+    "scripts": {
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --ansi --fix",
+        "phpstan": "phpstan --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
